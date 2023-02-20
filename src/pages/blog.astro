@@ -1,7 +1,9 @@
 ---
+import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 
-const posts = await Astro.glob("../posts/*.md");
+// const posts = await Astro.glob("../content/blog/*.md");
+const posts = await getCollection("blog");
 ---
 
 <Layout title="Blog">
@@ -9,8 +11,8 @@ const posts = await Astro.glob("../posts/*.md");
   {
     posts.map((post) => (
       <div class="mb-10">
-        <h2>{post.frontmatter.title}</h2>
-        <a href={`/${post.frontmatter.slug}`}>Read More</a>
+        <h2>{post.data.title}</h2>
+        <a href={`/${post.slug}`}>Read More</a>
       </div>
     ))
   }

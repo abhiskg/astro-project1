@@ -1,6 +1,6 @@
 ---
 title: "Cardiology Hospital in India"
-slug: "new-in-php-8"
+# slug: "new-in-php-8"
 date: "May 7, 2021"
 excerpt: "In this article we will look at some of the new features offered in version 8 of PHP"
 cover_image: "https://res.cloudinary.com/froshital/image/upload/v1649076289/Froshital/blog/img4_tj3wsf.jpg"

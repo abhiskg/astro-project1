@@ -1,0 +1,6 @@
+<footer>Copyright <span id="copyright"></span></footer>
+
+<script>
+  (document.querySelector("#copyright") as HTMLSpanElement).textContent =
+    new Date().getFullYear().toString();
+</script>
